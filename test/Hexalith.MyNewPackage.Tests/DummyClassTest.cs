@@ -18,8 +18,12 @@ public class DummyClassTest
     [Fact]
     public void Test1()
     {
+        // Arrange
         var value = new DummyClass(true);
 
+        // Act
+
+        // Assert
         value.SampleValue.ShouldBeTrue();
     }
 }
