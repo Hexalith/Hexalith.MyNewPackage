@@ -1,11 +1,11 @@
 {
-  "name": "hexalith-template-mynewpackage",
+  "name": "hexalith-mynewpackage",
   "version": "0.0.0-development",
   "private": true,
   "description": "Hexalith MyNewPackage libraries",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hexalith/Hexalith.Template.Package.git"
+    "url": "https://github.com/Hexalith/Hexalith.MyNewPackage.git"
   },
   "release": {
     "branches": [ "main" ]
