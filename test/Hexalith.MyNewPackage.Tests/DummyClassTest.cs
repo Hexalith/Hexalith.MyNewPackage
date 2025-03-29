@@ -19,7 +19,7 @@ public class DummyClassTest
     public void Test1()
     {
         // Arrange
-        var value = new DummyClass("test", "hello");
+        var value = new DummyClass("test");
 
         // Act
 
