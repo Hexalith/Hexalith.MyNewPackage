@@ -5,9 +5,9 @@ param (
     [string]$PackageName
 )
 
-Write-Host "Initializing package: $PackageName"
-Write-Host "Replacing 'MyNewPackage' with '$PackageName' in all files..."
-Write-Host "Also replacing 'mynewpackage' with '$($PackageName.ToLower())' in all files..."
+Write-Output "Initializing package: $PackageName"
+Write-Verbose "Replacing 'MyNewPackage' with '$PackageName' in all files..."
+Write-Verbose "Also replacing 'mynewpackage' with '$($PackageName.ToLower())' in all files..."
 
 # Function to process a file
 function ProcessFile {
@@ -48,7 +48,7 @@ function ProcessFile {
         
         if ($hasChanges) {
             Set-Content -Path $FilePath -Value $content -NoNewline
-            Write-Host "Updated: $FilePath"
+            Write-Verbose "Updated: $FilePath"
         }
     }
     catch {
@@ -94,7 +94,7 @@ function Rename-ProjectItems {
         $newPath = Join-Path -Path $parentPath -ChildPath $newName
         try {
             Rename-Item -Path $item.FullName -NewName $newName -Force -ErrorAction Stop
-            Write-Host "Renamed $($ItemType): $($item.FullName) -> $newPath"
+            Write-Verbose "Renamed $($ItemType): $($item.FullName) -> $newPath"
         }
         catch {
             Write-Warning "Could not rename $($ItemType): $($item.FullName)"
@@ -118,42 +118,42 @@ Rename-ProjectItems -SearchPattern "mynewpackage" -Replacement $PackageName.ToLo
 Rename-ProjectItems -SearchPattern "mynewpackage" -Replacement $PackageName.ToLower() -ItemType File
 
 # Initialize and update Git submodules
-Write-Host "`nInitializing Git submodules..."
+Write-Output "`nInitializing Git submodules..."
 try {
     # Check if .gitmodules file exists
     if (Test-Path ".gitmodules") {
         # Initialize submodules
         git submodule init
-        Write-Host "Git submodules initialized"
+        Write-Verbose "Git submodules initialized"
         
         # Update submodules
         git submodule update
-        Write-Host "Git submodules updated"
+        Write-Verbose "Git submodules updated"
         
         # Checkout main branch for each submodule
         $submodules = git submodule foreach -q 'echo $name'
         foreach ($submodule in $submodules) {
-            Write-Host "Checking out main branch for submodule: $submodule"
+            Write-Verbose "Checking out main branch for submodule: $submodule"
             Push-Location $submodule
             
             # Try to checkout main branch, if it fails try master
             git checkout main -q 2>$null
             if ($LASTEXITCODE -ne 0) {
-                Write-Host "  Main branch not found, trying master..."
+                Write-Verbose "  Main branch not found, trying master..."
                 git checkout master -q 2>$null
                 if ($LASTEXITCODE -ne 0) {
                     Write-Warning "  Could not checkout main or master branch for $submodule"
                 } else {
-                    Write-Host "  Successfully checked out master branch for $submodule"
+                    Write-Verbose "  Successfully checked out master branch for $submodule"
                 }
             } else {
-                Write-Host "  Successfully checked out main branch for $submodule"
+                Write-Verbose "  Successfully checked out main branch for $submodule"
             }
             
             Pop-Location
         }
     } else {
-        Write-Host "No .gitmodules file found, skipping submodule initialization"
+        Write-Verbose "No .gitmodules file found, skipping submodule initialization"
     }
 }
 catch {
@@ -161,6 +161,6 @@ catch {
     Write-Warning $_.Exception.Message
 }
 
-Write-Host "`nInitialization complete!"
-Write-Host "Package name has been changed from 'MyNewPackage' to '$PackageName'"
-Write-Host "Lowercase 'mynewpackage' has been changed to '$($PackageName.ToLower())'" 
+Write-Output "`nInitialization complete!"
+Write-Output "Package name has been changed from 'MyNewPackage' to '$PackageName'"
+Write-Output "Lowercase 'mynewpackage' has been changed to '$($PackageName.ToLower())'" 
