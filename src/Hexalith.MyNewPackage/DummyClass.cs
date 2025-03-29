@@ -9,13 +9,4 @@ namespace Hexalith.MyNewPackage;
 /// Represents a dummy class for demonstration purposes.
 /// <param name="SampleValue">A sample value to demonstrate functionality.</param>
 /// </summary>
-public record DummyClass(bool SampleValue)
-{
-    /// <summary>
-    /// Initializes a new instance of the <see cref="DummyClass"/> class.
-    /// </summary>
-    protected DummyClass()
-    {
-        // Constructor logic here
-    }
-}
+public record DummyClass(bool SampleValue);

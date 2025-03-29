@@ -18,8 +18,8 @@ public class DummyClassTest
     [Fact]
     public void Test1()
     {
-        const bool value = new DummyClass(true).SampleValue;
+        var value = new DummyClass(true);
 
-        value.ShouldBeTrue();
+        value.SampleValue.ShouldBeTrue();
     }
 }
