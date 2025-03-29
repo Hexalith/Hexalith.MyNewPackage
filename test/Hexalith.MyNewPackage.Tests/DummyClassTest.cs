@@ -19,11 +19,11 @@ public class DummyClassTest
     public void Test1()
     {
         // Arrange
-        var value = new DummyClass(true);
+        var value = new DummyClass("test");
 
         // Act
 
         // Assert
-        value.SampleValue.ShouldBeTrue();
+        value.SampleValue.ShouldBe("test");
     }
 }

@@ -9,4 +9,4 @@ namespace Hexalith.MyNewPackage;
 /// Represents a dummy class for demonstration purposes.
 /// <param name="SampleValue">A sample value to demonstrate functionality.</param>
 /// </summary>
-public record DummyClass(bool SampleValue);
+public record DummyClass(string SampleValue);
