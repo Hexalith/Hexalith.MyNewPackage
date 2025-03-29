@@ -22,8 +22,9 @@ public class DummyClassTest
         var value = new DummyClass("test");
 
         // Act
+        string result = value.SampleValue;
 
         // Assert
-        value.SampleValue.ShouldBe("test");
+        result.ShouldBe("test");
     }
 }
