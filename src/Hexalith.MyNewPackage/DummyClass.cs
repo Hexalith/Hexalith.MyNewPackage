@@ -7,14 +7,10 @@ namespace Hexalith.MyNewPackage;
 
 /// <summary>
 /// Represents a dummy class for demonstration purposes.
+/// <param name="SampleValue">A sample value to demonstrate functionality.</param>
 /// </summary>
-public class DummyClass
+public record DummyClass(bool SampleValue)
 {
-    /// <summary>
-    /// A sample constant to demonstrate functionality.
-    /// </summary>
-    public const bool SampleValue = true;
-
     /// <summary>
     /// Initializes a new instance of the <see cref="DummyClass"/> class.
     /// </summary>
