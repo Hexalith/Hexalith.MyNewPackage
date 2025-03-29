@@ -8,7 +8,7 @@ This is a template repository for creating new Hexalith packages. The repository
 [![Discord](https://img.shields.io/discord/1063152441819942922?label=Discord&logo=discord&logoColor=white&color=d82679)](https://discordapp.com/channels/1102166958918610994/1102166958918610997)
 
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/27051/badge.svg)](https://scan.coverity.com/projects/hexalith-MyNewPackage)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/11d3f1af6b0f4d168552c2626d588294)](https://app.codacy.com/gh/Hexalith/Hexalith.MyNewPackage/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d48f6d9ab9fb4776b6b4711fc556d1c4)](https://app.codacy.com/gh/Hexalith/Hexalith.MyNewPackage/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Hexalith_Hexalith.MyNewPackage&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Hexalith_Hexalith.MyNewPackage)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Hexalith_Hexalith.MyNewPackage&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Hexalith_Hexalith.MyNewPackage)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Hexalith_Hexalith.MyNewPackage&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Hexalith_Hexalith.MyNewPackage)
@@ -34,7 +34,7 @@ This repository provides a template for creating new Hexalith packages. It inclu
 Hexalith.MyNewPackage/
 ├── .github/             # GitHub workflows and configurations
 ├── Hexalith.Builds/     # Shared build configurations (submodule)
-├── src/                 # Source code 
+├── src/                 # Source code
 ├── test/                # Test projects
 ├── .gitignore           # Git ignore file
 ├── .gitmodules          # Git submodules configuration
@@ -66,6 +66,7 @@ To use this template to create a new Hexalith package:
 ```
 
 This script will:
+
 - Replace all occurrences of "MyNewPackage" with your package name
 - Replace all occurrences of "mynewpackage" with the lowercase version of your package name
 - Rename directories and files that contain "MyNewPackage" in their name
