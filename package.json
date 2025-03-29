@@ -1,18 +1,18 @@
 {
-  "name": "hexalith-template-package",
+  "name": "hexalith-template-mynewpackage",
   "version": "0.0.0-development",
   "private": true,
-  "description": "Hexalith template repository for Hexalith packaged libraries",
+  "description": "Hexalith MyNewPackage libraries",
   "repository": {
     "type": "git",
     "url": "https://github.com/Hexalith/Hexalith.Template.Package.git"
   },
   "release": {
-    "branches": ["main"]
+    "branches": [ "main" ]
   },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.2.6",
     "semantic-release": "^23.0.2"
   }
-} 
+}
