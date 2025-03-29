@@ -40,10 +40,6 @@ Alternatively, you can use the provided script:
 5. Start developing your package in the `src/` directory
 6. Add tests in the `test/` directory
 
-## Documentation
-
-For detailed documentation on how to use this template, see the [DOCUMENTATION.md](DOCUMENTATION.md) file.
-
 ## Repository Structure
 
 ```
@@ -54,7 +50,6 @@ Hexalith.Template.Package/
 ├── test/                     # Test projects
 ├── .gitignore                # Git ignore file
 ├── .gitmodules               # Git submodules configuration
-├── DOCUMENTATION.md          # Detailed documentation
 ├── LICENSE                   # License file
 └── README.md                 # This file
 ```
