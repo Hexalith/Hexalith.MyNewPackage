@@ -1,11 +1,11 @@
 {
-  "name": "hexalith-commons",
+  "name": "hexalith-template-package",
   "version": "0.0.0-development",
   "private": true,
-  "description": "Hexalith Commons Libraries",
+  "description": "Hexalith template repository for Hexalith packaged libraries",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hexalith/Hexalith.Commons.git"
+    "url": "https://github.com/Hexalith/Hexalith.Template.Package.git"
   },
   "release": {
     "branches": ["main"]
