@@ -30,7 +30,7 @@ This repository provides a template for creating new Hexalith packages. It inclu
 
 ## Repository Structure
 
-```
+```text
 Hexalith.MyNewPackage/
 ├── .github/             # GitHub workflows and configurations
 ├── Hexalith.Builds/     # Shared build configurations (submodule)
