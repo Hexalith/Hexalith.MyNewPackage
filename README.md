@@ -34,13 +34,14 @@ The repository is organized as follows:
 
 - [src](./src/README.md) Is the source code directory where you will add your package projects.
 - [test](./test/README.md) Contains test projects for your packages.
-- [samples](./samples/README.md) Contains example implementations of your packages.
+- [examples](./examples/README.md) Contains example implementations of your packages.
 - [Hexalith.Builds](./Hexalith.Builds/README.md) Contains shared build configurations and tools.
 
 ## Getting Started
 
 ### Prerequisites
 
+- [Hexalith.Builds](https://github.com/Hexalith/Hexalith.Builds)
 - [.NET 8 SDK](https://dotnet.microsoft.com/download) or later
 - [PowerShell 7](https://github.com/PowerShell/PowerShell) or later
 - [Git](https://git-scm.com/)
