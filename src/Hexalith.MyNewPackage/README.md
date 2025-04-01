@@ -55,7 +55,7 @@ Contributions are welcome. Please ensure your code adheres to the project standa
 
 ## License
 
-[License information]
+[License information](LICENSE)
 
 ## Learn More
 
