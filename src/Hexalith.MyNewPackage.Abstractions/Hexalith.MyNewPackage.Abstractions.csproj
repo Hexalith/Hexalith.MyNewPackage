@@ -5,8 +5,6 @@
     <PackageProjectUrl>https://github.com/Hexalith/Hexalith.MyNewPackage</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Hexalith/Hexalith.MyNewPackage</RepositoryUrl>
     <PackageTags>hexalith;MyNewPackage;</PackageTags>
+    <RootNamespace>Hexalith.MyNewPackage</RootNamespace>
   </PropertyGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Hexalith.MyNewPackage.Abstractions\Hexalith.MyNewPackage.Abstractions.csproj" />
-  </ItemGroup>
 </Project>

@@ -11,4 +11,10 @@
 
   <!-- Import the Hexalith.Package.props file in Hexalith.Builds. This file must exist. -->
   <Import Project="$(HexalithPackageProps)/Hexalith.Package.props" />
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Hexalith.MyNewPackage.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
 </Project>
