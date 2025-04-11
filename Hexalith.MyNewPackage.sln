@@ -15,6 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{F9B9A5
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
+		Hexalith.Builds\Hexalith.Build.props = Hexalith.Builds\Hexalith.Build.props
+		Hexalith.Builds\Hexalith.globalconfig = Hexalith.Builds\Hexalith.globalconfig
+		Hexalith.Builds\Hexalith.Package.props = Hexalith.Builds\Hexalith.Package.props
 		package.json = package.json
 	EndProjectSection
 EndProject
@@ -51,6 +54,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexalith.MyNewPackage.Examp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexalith.MyNewPackage.Abstractions", "src\Hexalith.MyNewPackage.Abstractions\Hexalith.MyNewPackage.Abstractions.csproj", "{CCA8A23F-D69E-76DE-5B35-3B61C3C9CE73}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Props", "Props", "{5127D58B-C7E5-4106-BB77-9E296491F36F}"
+	ProjectSection(SolutionItems) = preProject
+		Hexalith.Builds\Props\Directory.Packages.props = Hexalith.Builds\Props\Directory.Packages.props
+		Hexalith.Builds\Props\Environment.Build.props = Hexalith.Builds\Props\Environment.Build.props
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +92,7 @@ Global
 		{A0520529-37CD-4558-8D3C-119DB006D10D} = {EDB74E69-759C-4EC4-911B-DF6D777A6CFA}
 		{52A95C3D-7705-406D-B0F6-C49017FC525F} = {3E198984-7A1D-4A63-BB49-FCF1B9AA5EF2}
 		{CCA8A23F-D69E-76DE-5B35-3B61C3C9CE73} = {2E1479EA-06ED-4A69-8F50-F17804066FA6}
+		{5127D58B-C7E5-4106-BB77-9E296491F36F} = {F9B9A5B1-8090-40C2-B46F-F4083B72C8BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B7376F4-B33A-4BC6-AFCA-C09B437568D7}
