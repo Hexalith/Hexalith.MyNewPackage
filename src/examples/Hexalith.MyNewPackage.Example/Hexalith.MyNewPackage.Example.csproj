@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Hexalith.MyNewPackage\Hexalith.MyNewPackage.csproj" />
+    <ProjectReference Include="..\..\libraries\Hexalith.MyNewPackage\Hexalith.MyNewPackage.csproj" />
   </ItemGroup>
 
 </Project>

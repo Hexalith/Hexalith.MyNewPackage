@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Hexalith.MyNewPackage\Hexalith.MyNewPackage.csproj" />
+    <ProjectReference Include="..\..\src\libraries\Hexalith.MyNewPackage\Hexalith.MyNewPackage.csproj" />
   </ItemGroup>
 
   <ItemGroup>
