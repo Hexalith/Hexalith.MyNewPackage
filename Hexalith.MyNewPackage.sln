@@ -183,6 +183,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9D38EDD7-5A8
 		HexalithApp\src\Directory.Build.props = HexalithApp\src\Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tools", ".tools", "{AFA09F65-6EFE-4D6C-B6D7-BD452170FC3C}"
+	ProjectSection(SolutionItems) = preProject
+		tools\flush_redis.bat = tools\flush_redis.bat
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
