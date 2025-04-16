@@ -33,7 +33,7 @@ This repository provides a template for creating new Hexalith packages. It inclu
 The repository is organized as follows:
 
 - [src](./src/README.md) Is the source code directory of your project.
-- [src/librairies](./src/librairies/README.md) Is the source code directory where you will add your Nuget package projects.
+- [src/libraries](./src/libraries/README.md) Is the source code directory where you will add your Nuget package projects.
 - [src/examples](./src/examples/README.md) Contains example implementations of your projects.
 - [src/servers](./src/servers/README.md) Is the source code directory where you will add your Docker container projects.
 - [src/aspire](./src/aspire/README.md) Is the source code directory where you will add your Aspire project.
