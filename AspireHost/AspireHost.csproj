@@ -11,6 +11,10 @@
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" />
+    <PackageReference Include="Hexalith.NetAspire.Hosting" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\HexalithApp\src\HexalithApp.ApiServer\HexalithApp.ApiServer.csproj" />
+    <ProjectReference Include="..\HexalithApp\src\HexalithApp.WebServer\HexalithApp.WebServer.csproj" />
+  </ItemGroup>
 </Project>
