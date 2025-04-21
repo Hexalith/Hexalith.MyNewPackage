@@ -22,7 +22,7 @@ This is a template repository for creating new Hexalith packages. The repository
 
 [![Build status](https://github.com/Hexalith/Hexalith.MyNewPackage/actions/workflows/build-release.yml/badge.svg)](https://github.com/Hexalith/Hexalith.MyNewPackage/actions)
 [![NuGet](https://img.shields.io/nuget/v/Hexalith.MyNewPackage.svg)](https://www.nuget.org/packages/Hexalith.MyNewPackage)
-[![Latest](https://img.shields.io/github/v/release/Hexalith/Hexalith.MyNewPackage?include_prereleases&label=preview)](https://github.com/Hexalith/Hexalith.MyNewPackage/pkgs/nuget/Hexalith.MyNewPackage)
+[![Latest](https://img.shields.io/github/v/release/Hexalith/Hexalith.MyNewPackage?include_prereleases&label=latest)](https://github.com/Hexalith/Hexalith.MyNewPackage/pkgs/nuget/Hexalith.MyNewPackage)
 
 ## Overview
 
