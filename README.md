@@ -39,13 +39,15 @@ The repository is organized as follows:
 - [src/aspire](./src/aspire/README.md) Is the source code directory where you will add your Aspire project.
 - [test](./test/README.md) Contains test projects for your packages.
 - [Hexalith.Builds](./Hexalith.Builds/README.md) Contains shared build configurations and tools.
+- [HexalithApp](./HexalithApp/README.md) Contains hexalith application and servers.
 
 ## Getting Started
 
 ### Prerequisites
 
 - [Hexalith.Builds](https://github.com/Hexalith/Hexalith.Builds)
-- [.NET 8 SDK](https://dotnet.microsoft.com/download) or later
+- [HexalithApp](https://github.com/Hexalith/HexalithApp)
+- [.NET 9 SDK](https://dotnet.microsoft.com/download) or later
 - [PowerShell 7](https://github.com/PowerShell/PowerShell) or later
 - [Git](https://git-scm.com/)
 
@@ -59,6 +61,8 @@ To use this template to create a new Hexalith package:
 ```powershell
 ./initialize.ps1 -PackageName "YourPackageName"
 ```
+
+The package name will be "Hexalith.YourPackageName"
 
 This script will:
 
