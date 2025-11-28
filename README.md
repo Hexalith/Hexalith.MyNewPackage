@@ -47,7 +47,7 @@ The repository is organized as follows:
 
 - [Hexalith.Builds](https://github.com/Hexalith/Hexalith.Builds)
 - [HexalithApp](https://github.com/Hexalith/HexalithApp)
-- [.NET 9 SDK](https://dotnet.microsoft.com/download) or later
+- [.NET 10 SDK](https://dotnet.microsoft.com/download) or later
 - [PowerShell 7](https://github.com/PowerShell/PowerShell) or later
 - [Git](https://git-scm.com/)
 
