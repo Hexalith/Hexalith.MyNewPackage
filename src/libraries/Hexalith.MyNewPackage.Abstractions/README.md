@@ -1,63 +1,67 @@
-# Hexalith MyNewPackage
+# Hexalith.MyNewPackage.Abstractions
 
 ## Overview
 
-This repository serves as a template for creating new packages for the Hexalith platform. It provides the essential structure and configuration needed to develop, test, and integrate new functionality with the Hexalith ecosystem.
+This package contains the interface definitions and abstractions for Hexalith.MyNewPackage. It defines contracts that are implemented by the main `Hexalith.MyNewPackage` package.
 
-## Purpose
+## Installation
 
-The Hexalith MyNewPackage template simplifies the process of creating new packages by providing:
+```powershell
+dotnet add package Hexalith.MyNewPackage.Abstractions
+```
 
-- Standardized project structure
-- Pre-configured build settings
-- Testing framework setup
-- Integration points with the Hexalith platform
+Or via NuGet Package Manager:
 
-## Getting Started
+```powershell
+Install-Package Hexalith.MyNewPackage.Abstractions
+```
 
-### Prerequisites
+## Prerequisites
 
-- .NET 8.0 or later
-- Visual Studio 2022 or another compatible IDE
-- Git
+- .NET 10 or later
 
-### Creating a New Package
+## Usage
 
-1. Use this repository as a template
-2. Clone your new repository
-3. Rename the solution and projects to match your package name
-4. Update the namespace references
-5. Implement your functionality
+Reference this package when you only need the interface definitions without the concrete implementations:
 
-## Project Structure
+```csharp
+using Hexalith.MyNewPackage;
 
-- `src/` - Source code for the package
-- `test/` - Unit and integration tests
-- `samples/` - Example implementations
+public class MyService
+{
+    private readonly IDummyClass _dummy;
 
-## Development Guidelines
+    public MyService(IDummyClass dummy)
+    {
+        _dummy = dummy;
+    }
 
-- Follow C# coding standards and best practices
-- Use primary constructors for classes and records
-- Include XML documentation for public, protected, and internal members
-- Write unit tests using XUnit and Shouldly
+    public void DoSomething()
+    {
+        Console.WriteLine(_dummy.SampleValue);
+    }
+}
+```
 
-## Building and Testing
+## Interfaces
+
+- `IDummyClass` - Sample interface demonstrating the abstractions pattern
+
+## Why Abstractions?
+
+Separating abstractions into their own package allows:
+
+- **Loose coupling**: Depend only on interfaces, not implementations
+- **Dependency injection**: Easily swap implementations
+- **Testing**: Mock interfaces for unit testing
+- **Reduced dependencies**: Reference only what you need
+
+## Building
 
 ```powershell
 dotnet build
-dotnet test
 ```
-
-## Contributing
-
-Contributions are welcome. Please ensure your code adheres to the project standards and is covered by tests.
 
 ## License
 
-[License information](LICENSE)
-
-## Learn More
-
-- [Hexalith Documentation](https://github.com/Hexalith)
-- [Getting Started with Hexalith](https://github.com/Hexalith)
+This project is licensed under the MIT License - see the [LICENSE](../../../LICENSE) file for details.

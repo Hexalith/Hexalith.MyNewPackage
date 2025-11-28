@@ -32,14 +32,11 @@ This repository provides a template for creating new Hexalith packages. It inclu
 
 The repository is organized as follows:
 
-- [src](./src/README.md) Is the source code directory of your project.
-- [src/libraries](./src/libraries/README.md) Is the source code directory where you will add your Nuget package projects.
-- [src/examples](./src/examples/README.md) Contains example implementations of your projects.
-- [src/servers](./src/servers/README.md) Is the source code directory where you will add your Docker container projects.
-- [src/aspire](./src/aspire/README.md) Is the source code directory where you will add your Aspire project.
-- [test](./test/README.md) Contains test projects for your packages.
-- [Hexalith.Builds](./Hexalith.Builds/README.md) Contains shared build configurations and tools.
-- [HexalithApp](./HexalithApp/README.md) Contains hexalith application and servers.
+- [src](./src/README.md) - Source code directory of your project.
+- [src/libraries](./src/libraries/README.md) - NuGet package projects.
+- [src/examples](./src/examples/README.md) - Example implementations.
+- [test](./test/README.md) - Test projects for your packages.
+- [Hexalith.Builds](./Hexalith.Builds/README.md) - Shared build configurations and tools (submodule).
 
 ## Getting Started
 
