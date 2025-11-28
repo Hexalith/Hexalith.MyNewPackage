@@ -10,19 +10,19 @@ using Shouldly;
 /// <summary>
 /// Initial unit tests for Hexalith.MyNewPackage.
 /// </summary>
-public class UnitTest1
+public static class UnitTest1
 {
     /// <summary>
     /// Example test to verify test infrastructure is working.
     /// </summary>
     [Fact]
-    public void ExampleTest_ShouldPass()
+    public static void ExampleTestShouldPass()
     {
         // Arrange
         const int expected = 42;
 
         // Act
-        int actual = 42;
+        const int actual = 42;
 
         // Assert
         actual.ShouldBe(expected);
