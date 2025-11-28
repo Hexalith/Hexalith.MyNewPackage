@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.35906.104
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11217.181 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -152,8 +152,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{401F4B14
 		Hexalith.Builds\Tools\README.md = Hexalith.Builds\Tools\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireHost", "AspireHost\AspireHost.csproj", "{75479A66-C8B1-45D7-8B4E-851BB4C161EB}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "packages", "packages", "{C67B5007-8999-4638-8317-C6DA2F62D65C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HexalithApp", "HexalithApp", "{568500EF-C4B9-4F72-B9F3-01EB044A4659}"
@@ -216,10 +214,6 @@ Global
 		{CCA8A23F-D69E-76DE-5B35-3B61C3C9CE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCA8A23F-D69E-76DE-5B35-3B61C3C9CE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCA8A23F-D69E-76DE-5B35-3B61C3C9CE73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{75479A66-C8B1-45D7-8B4E-851BB4C161EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75479A66-C8B1-45D7-8B4E-851BB4C161EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75479A66-C8B1-45D7-8B4E-851BB4C161EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75479A66-C8B1-45D7-8B4E-851BB4C161EB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A52EA813-878E-672E-D869-1E522FBD42FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A52EA813-878E-672E-D869-1E522FBD42FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A52EA813-878E-672E-D869-1E522FBD42FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
